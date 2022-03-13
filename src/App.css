@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #00818c;
+    font-family: sans-serif;
+    padding: 0 20px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h1 {
+    color: white;
+    background-color: #00818c;
+    font-size: 25px;
+    padding-bottom: 0px;
+    text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.p {
+    color: black;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+    color: red;
+}
+
+select,
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type='submit'],
+input[type='reset'],
+.button {
+    position: relative;
+    background: #00818c;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    display: block;
+    appearance: none;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: lighter;
+    transition: 0.3s all;
+}
+
+button[type='button'] {
+    padding: 5px;
+    background: #00818c;
+    color: white;
+    letter-spacing: 0px;
+    text-transform: none;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+button[type='button']:hover {
+    background: rgb(148, 148, 233);
+    color: white;
+}
+
+input[type='submit']:active,
+input[type='reset']:active {
+    transition: 0.3s all;
+    top: 2px;
 }
